@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html><head><title>controller.js
+ - Stryker report</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="strykerResources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="strykerResources/highlightjs/styles/default.css">
+<link rel="stylesheet" href="strykerResources/stryker.css"></head>
+<body><img class="stryker-image" alt="Stryker" src="strykerResources/stryker-80x80.png">
+<div class="container-fluid"><div class="row"><div class="col-lg-12"><h1 class="display-4">controller.js
+ 
+<small class="text-muted">- Stryker report</small></h1></div></div>
+<ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">All files</a></li>
+<li class="breadcrumb-item active">controller.js</li></ol>
+<div class="row"><div class="col-lg-12"><div class="row"><div class="col-sm-11"><table class="table table-sm table-hover table-bordered table-no-top"><thead><tr><th style="width: 20%"><div><span>File / Directory</span></div></th>
+<th colspan="2"><div><span>Mutation score</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Killed</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Survived</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Timeout</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># No coverage</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Runtime errors</span></div></th>
+<th class="rotate text-center" style="width: 50px"><div><span># Transpile errors</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total detected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total undetected</span></div></th>
+<th class="rotate rotate-width-70 text-center" style="width: 70px"><div><span>Total mutants</span></div></th></tr></thead>
+<tbody><tr><td>controller.js</td>
+<td><div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="1.39" aria-valuemin="0" aria-valuemax="100" style="width: 1.39%;">1.39
+%</div></div></td>
+<th class="text-center text-danger" style="width: 10%">1.39</th>
+<td class="text-center">1</td>
+<td class="text-center">20</td>
+<td class="text-center">0</td>
+<td class="text-center">51</td>
+<td class="text-center">0</td>
+<td class="text-center">0</td>
+<th class="text-center">1</th>
+<th class="text-center">71</th>
+<th class="text-center">72</th></tr>
+</tbody></table></div></div>
+<div class="row"><div class="col-lg-7"><div class="row legend"><form class="col-md-12" novalidate="novalidate"><div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="0" type="checkbox">
+NoCoverage
+ 
+(51)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" checked value="2" type="checkbox">
+Survived
+ 
+(20)</label></div>
+<div class="form-check form-check-inline"><label class="form-check-label"><input class="form-check-input stryker-display" value="1" type="checkbox">
+Killed
+ 
+(1)</label></div>
+
+
+
+<a href="#" class="stryker-collapse-expand-all">Expand all</a></form></div>
+<pre><code class="lang-javascript"><span class="bg-null">const controller = function (platform) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Killed" data-mutant-status-annotation="success" data-mutant-status="1" data-mutant="0"><span class="badge badge-success">0</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="0">{
+}</span><span class="stryker-original-code" data-mutant="0"><span class="bg-success-light">{
+    const _ = undefined;
+    this.pizzas;
+    this.ingredients;
+
+    const gui = {
+        getNode: element =&gt; platform.getElementById(element),
+        setPizzaNodeQuantity: function (pizza, quantity) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="1"><span class="badge badge-danger">1</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="1">{
+}</span><span class="stryker-original-code" data-mutant="1"><span class="bg-danger-light">{
+            this.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="2"><span class="badge badge-danger">2</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="2">pizza.hash - &#039;Quantity&#039;</span><span class="stryker-original-code" data-mutant="2"><span class="bg-danger-light">pizza.hash + &#039;Quantity&#039;</span></span><span class="bg-danger-light">).childNodes[0].nodeValue = quantity;
+        }</span></span><span class="bg-success-light">,
+        setPizzaNodePrice: function (pizza, price) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="3"><span class="badge badge-danger">3</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="3">{
+}</span><span class="stryker-original-code" data-mutant="3"><span class="bg-danger-light">{
+            this.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="4"><span class="badge badge-danger">4</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="4">pizza.hash - &#039;Price&#039;</span><span class="stryker-original-code" data-mutant="4"><span class="bg-danger-light">pizza.hash + &#039;Price&#039;</span></span><span class="bg-danger-light">).childNodes[0].nodeValue = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="5"><span class="badge badge-danger">5</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="5">price.toFixed(2) - &#039;\u20AC&#039;</span><span class="stryker-original-code" data-mutant="5"><span class="bg-danger-light">price.toFixed(2) + &#039;€&#039;</span></span><span class="bg-danger-light">;
+        }</span></span><span class="bg-success-light">,
+        setSizePrice: function (name, price) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="6"><span class="badge badge-danger">6</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="6">{
+}</span><span class="stryker-original-code" data-mutant="6"><span class="bg-danger-light">{
+            this.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="7"><span class="badge badge-danger">7</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="7">&#039;span&#039; - name</span><span class="stryker-original-code" data-mutant="7"><span class="bg-danger-light">&#039;span&#039; + name</span></span><span class="bg-danger-light">).childNodes[0].nodeValue = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="8"><span class="badge badge-danger">8</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="8">price.toFixed(2) - &#039;\u20AC&#039;</span><span class="stryker-original-code" data-mutant="8"><span class="bg-danger-light">price.toFixed(2) + &#039;€&#039;</span></span><span class="bg-danger-light">;
+        }</span></span><span class="bg-success-light">,
+        initEvents: function () </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="9"><span class="badge badge-danger">9</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="9">{
+}</span><span class="stryker-original-code" data-mutant="9"><span class="bg-danger-light">{
+            gui.getNode(&quot;addIngredient&quot;).addEventListener(&#039;click&#039;, addIngredient);
+            gui.getNode(&quot;rmIngredient&quot;).addEventListener(&#039;click&#039;, removeIngredient);
+        }</span></span><span class="bg-success-light">,
+    };
+
+    const init = (pizzaService, orderService) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="10"><span class="badge badge-danger">10</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="10">{
+}</span><span class="stryker-original-code" data-mutant="10"><span class="bg-danger-light">{
+        this.pizzaService = pizzaService;
+        /*   this.orderService = orderService; */
+
+        this.pizzas = pizzaService.pizzas;
+        this.ingredients = pizzaService.ingredients;
+
+        gui.initEvents();
+        showPizzas();
+    }</span></span><span class="bg-success-light">
+
+    /* Métodos de vistas */
+    function insertText(text, parentNode) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="11"><span class="badge badge-danger">11</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="11">{
+}</span><span class="stryker-original-code" data-mutant="11"><span class="bg-danger-light">{
+        const element = platform.createTextNode(text);
+        parentNode.appendChild(element)
+    }</span></span><span class="bg-success-light">
+
+    function generateNode(type, listClass, attributes, parentNode) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="12"><span class="badge badge-danger">12</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="12">{
+}</span><span class="stryker-original-code" data-mutant="12"><span class="bg-danger-light">{
+        const element = platform.createElement(type);
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="13"><span class="badge badge-danger">13</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="13">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="14"><span class="badge badge-danger">14</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="14">true</span><span class="stryker-original-code" data-mutant="13"><span class="stryker-original-code" data-mutant="14"><span class="bg-danger-light">listClass</span></span></span><span class="bg-danger-light">) element.classList.add(...listClass)
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="15"><span class="badge badge-danger">15</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="15">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="16"><span class="badge badge-danger">16</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="16">true</span><span class="stryker-original-code" data-mutant="15"><span class="stryker-original-code" data-mutant="16"><span class="bg-danger-light">attributes</span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="17"><span class="badge badge-danger">17</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="17">{
+}</span><span class="stryker-original-code" data-mutant="17"><span class="bg-danger-light">{
+            Object.entries(attributes).forEach(attribute =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="18"><span class="badge badge-danger">18</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="18">{
+}</span><span class="stryker-original-code" data-mutant="18"><span class="bg-danger-light">{
+                element.setAttribute(attribute[0], attribute[1])
+            }</span></span><span class="bg-danger-light">);
+        }</span></span><span class="bg-danger-light">
+        return parentNode.appendChild(element);
+    }</span></span><span class="bg-success-light">
+
+    const showPizzas = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="19"><span class="badge badge-danger">19</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="19">{
+}</span><span class="stryker-original-code" data-mutant="19"><span class="bg-danger-light">{
+        Object.keys(this.pizzas).forEach(keyPizza =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="20"><span class="badge badge-danger">20</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="20">{
+}</span><span class="stryker-original-code" data-mutant="20"><span class="bg-danger-light">{
+            printPizza(this.pizzas[keyPizza]);
+        }</span></span><span class="bg-danger-light">);
+    }</span></span><span class="bg-success-light">
+
+    const radioSize = (pizza, size) =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="21"><span class="badge badge-danger">21</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="21">{
+}</span><span class="stryker-original-code" data-mutant="21"><span class="bg-danger-light">{
+        showDefaultIngredients(pizza);
+        showAvaiableIngredients(pizza);
+        //Si la pizza es la sleccionado
+        this.pizzaService.setSizePizza(size);
+        gui.setSizePrice(pizza.name, pizza.price);
+    }</span></span><span class="bg-success-light">
+
+    const printPizza = pizza =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="22"><span class="badge badge-danger">22</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="22">{
+}</span><span class="stryker-original-code" data-mutant="22"><span class="bg-danger-light">{
+        const mainDiv = generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="23"><span class="badge badge-danger">23</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="23">[]</span><span class="stryker-original-code" data-mutant="23"><span class="bg-danger-light">[&#039;col-md-3&#039;]</span></span><span class="bg-danger-light">, _, gui.getNode(&#039;listPizzas&#039;));
+        const pizzaDiv = generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="24"><span class="badge badge-danger">24</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="24">[]</span><span class="stryker-original-code" data-mutant="24"><span class="bg-danger-light">[&#039;pizza&#039;]</span></span><span class="bg-danger-light">, _, mainDiv);
+        generateNode(&#039;img&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="25"><span class="badge badge-danger">25</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="25">[]</span><span class="stryker-original-code" data-mutant="25"><span class="bg-danger-light">[&#039;col-md-8&#039;]</span></span><span class="bg-danger-light">, {
+            src: pizza.img,
+        }, pizzaDiv);
+
+        const containerAllRadios = generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="26"><span class="badge badge-danger">26</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="26">[]</span><span class="stryker-original-code" data-mutant="26"><span class="bg-danger-light">[&#039;col-md-3&#039;]</span></span><span class="bg-danger-light">, _, pizzaDiv);
+        insertText(&#039;Tamaño&#039;, generateNode(&#039;h4&#039;, _, _, containerAllRadios));
+        </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="27"><span class="badge badge-danger">27</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="27">[]</span><span class="stryker-original-code" data-mutant="27"><span class="bg-danger-light">[&quot;little&quot;, &quot;medium&quot;, &quot;big&quot;]</span></span><span class="bg-danger-light">.forEach(sizePizza =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="28"><span class="badge badge-danger">28</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="28">{
+}</span><span class="stryker-original-code" data-mutant="28"><span class="bg-danger-light">{
+            const radioDiv1 = generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="29"><span class="badge badge-danger">29</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="29">[]</span><span class="stryker-original-code" data-mutant="29"><span class="bg-danger-light">[&#039;radio&#039;]</span></span><span class="bg-danger-light">, _, containerAllRadios);
+
+            const inputRadio1 = generateNode(&#039;input&#039;, _, {
+                type: &#039;radio&#039;,
+                name: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="30"><span class="badge badge-danger">30</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="30">&#039;pizza&#039; - pizza.name</span><span class="stryker-original-code" data-mutant="30"><span class="bg-danger-light">&#039;pizza&#039; + pizza.name</span></span><span class="bg-danger-light">,
+                checked: &#039;checked&#039;,
+            }, radioDiv1);
+
+            inputRadio1.onclick = () =&gt; radioSize(pizza, sizePizza);
+            insertText(sizePizza, generateNode(&#039;label&#039;, _, _, radioDiv1));
+        }</span></span><span class="bg-danger-light">);
+        insertText(pizza.name, generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="31"><span class="badge badge-danger">31</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="31">[]</span><span class="stryker-original-code" data-mutant="31"><span class="bg-danger-light">[&#039;col-md-12&#039;, &#039;title&#039;]</span></span><span class="bg-danger-light">, _, pizzaDiv));
+        const price = generateNode(&#039;div&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="32"><span class="badge badge-danger">32</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="32">[]</span><span class="stryker-original-code" data-mutant="32"><span class="bg-danger-light">[&#039;col-md-5&#039;, &#039;price&#039;]</span></span><span class="bg-danger-light">, _, pizzaDiv)
+
+        insertText(&#039;Precio: &#039;, price);
+
+        insertText(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="33"><span class="badge badge-danger">33</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="33">pizza.price - &#039;\u20AC&#039;</span><span class="stryker-original-code" data-mutant="33"><span class="bg-danger-light">pizza.price + &#039;€&#039;</span></span><span class="bg-danger-light">, generateNode(&#039;span&#039;, _, {
+            id: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="34"><span class="badge badge-danger">34</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="34">&#039;span&#039; - pizza.name</span><span class="stryker-original-code" data-mutant="34"><span class="bg-danger-light">&#039;span&#039; + pizza.name</span></span><span class="bg-danger-light">,
+        }, price))
+
+        const butAdd = generateNode(&#039;button&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="35"><span class="badge badge-danger">35</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="35">[]</span><span class="stryker-original-code" data-mutant="35"><span class="bg-danger-light">[&#039;addButton&#039;, &#039;pull-right&#039;]</span></span><span class="bg-danger-light">, {
+            type: &#039;button&#039;
+        }, pizzaDiv);
+
+        butAdd.onclick = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="36"><span class="badge badge-danger">36</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="36">{
+}</span><span class="stryker-original-code" data-mutant="36"><span class="bg-danger-light">{
+            this.pizzaService.pizzaSelected = pizza;
+            showSelectedPizza();
+        }</span></span><span class="bg-danger-light">
+        insertText(&#039;+&#039;, butAdd);
+    }</span></span><span class="bg-success-light">
+
+    function showDefaultIngredients(pizza) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="37"><span class="badge badge-danger">37</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="37">{
+}</span><span class="stryker-original-code" data-mutant="37"><span class="bg-danger-light">{
+        const addedIngredients = gui.getNode(&quot;addedIngredients&quot;);
+        removeNodes(addedIngredients);
+        pizza.ingredients.forEach(ingredient =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="38"><span class="badge badge-danger">38</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="38">{
+}</span><span class="stryker-original-code" data-mutant="38"><span class="bg-danger-light">{
+            addedIngredients.options.add(new Option(ingredient, ingredient));
+            addedIngredients.options[</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="39"><span class="badge badge-danger">39</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="39">addedIngredients.childElementCount + 1</span><span class="stryker-original-code" data-mutant="39"><span class="bg-danger-light">addedIngredients.childElementCount - 1</span></span><span class="bg-danger-light">].disabled = </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="40"><span class="badge badge-danger">40</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="40">false</span><span class="stryker-original-code" data-mutant="40"><span class="bg-danger-light">true</span></span><span class="bg-danger-light">;
+        }</span></span><span class="bg-danger-light">);
+    }</span></span><span class="bg-success-light">
+    function showAvaiableIngredients(pizza) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="41"><span class="badge badge-danger">41</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="41">{
+}</span><span class="stryker-original-code" data-mutant="41"><span class="bg-danger-light">{
+        const availableIngredients = gui.getNode(&quot;availableIngredients&quot;);
+        removeNodes(availableIngredients);
+        this.ingredients.forEach(ingredient =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="42"><span class="badge badge-danger">42</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="42">{
+}</span><span class="stryker-original-code" data-mutant="42"><span class="bg-danger-light">{
+            availableIngredients.options.add(new Option(ingredient, ingredient));
+        }</span></span><span class="bg-danger-light">);
+    }</span></span><span class="bg-success-light">
+    function showSelectedPizza() </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="43"><span class="badge badge-danger">43</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="43">{
+}</span><span class="stryker-original-code" data-mutant="43"><span class="bg-danger-light">{
+        const pizza = this.pizzaService.pizzaSelected;
+        removeNodes(gui.getNode(&#039;selectedPizza&#039;));
+        generateNode(&#039;img&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="44"><span class="badge badge-danger">44</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="44">[]</span><span class="stryker-original-code" data-mutant="44"><span class="bg-danger-light">[&#039;img-selected&#039;, &#039;pull-left&#039;, &#039;col-md-6&#039;]</span></span><span class="bg-danger-light">, {
+            src: pizza.img,
+        }, gui.getNode(&#039;selectedPizza&#039;));
+
+        showDefaultIngredients(pizza);
+        showAvaiableIngredients(pizza);
+
+        const addPizzaToOrder = generateNode(&#039;button&#039;, _, {
+            type: &#039;button&#039;,
+        }, gui.getNode(&#039;selectedPizza&#039;));
+
+        insertText(&#039;Añadir&#039;, addPizzaToOrder);
+
+        addPizzaToOrder.onclick = function () </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="45"><span class="badge badge-danger">45</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="45">{
+}</span><span class="stryker-original-code" data-mutant="45"><span class="bg-danger-light">{
+            addPizza(pizza);
+        }</span></span><span class="bg-danger-light">
+    }</span></span><span class="bg-success-light">
+
+    const addIngredient = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="46"><span class="badge badge-danger">46</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="46">{
+}</span><span class="stryker-original-code" data-mutant="46"><span class="bg-danger-light">{
+        const availableIngredients = Array.from(gui.getNode(&quot;availableIngredients&quot;).selectedOptions);
+        const addedIngredients = gui.getNode(&quot;addedIngredients&quot;);
+
+        availableIngredients.forEach(ingredient =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="47"><span class="badge badge-danger">47</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="47">{
+}</span><span class="stryker-original-code" data-mutant="47"><span class="bg-danger-light">{
+            this.pizzaService.addIngredientPizza(ingredient.value);
+            gui.getNode(&quot;availableIngredients&quot;).remove(ingredient.index);
+            addedIngredients.options.add(new Option(ingredient.value, ingredient.value));
+        }</span></span><span class="bg-danger-light">);
+    }</span></span><span class="bg-success-light">
+
+    const removeIngredient = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="48"><span class="badge badge-danger">48</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="48">{
+}</span><span class="stryker-original-code" data-mutant="48"><span class="bg-danger-light">{
+        const addedIngredients = Array.from(gui.getNode(&quot;addedIngredients&quot;).selectedOptions);
+        const availableIngredients = gui.getNode(&quot;availableIngredients&quot;);
+        addedIngredients.forEach(ingredient =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="49"><span class="badge badge-danger">49</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="49">{
+}</span><span class="stryker-original-code" data-mutant="49"><span class="bg-danger-light">{
+            this.pizzaService.removeIngredientPizza(ingredient.value);
+            gui.getNode(&quot;addedIngredients&quot;).remove(ingredient.index);
+            availableIngredients.options.add(new Option(ingredient.value, ingredient.value));
+            /* this.pizzaService.removePriceIngredient(this.pizzaSelected, this.pizzaService.getPriceMod(this.pizzaSelected)); */
+        }</span></span><span class="bg-danger-light">);
+
+    }</span></span><span class="bg-success-light">
+
+    const isHeaderOrder = () =&gt; gui.getNode(&#039;orderTable&#039;);
+    const isNodeOrder = (pizza) =&gt; gui.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="50"><span class="badge badge-danger">50</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="50">pizza.hash - &#039;Name&#039;</span><span class="stryker-original-code" data-mutant="50"><span class="bg-danger-light">pizza.hash + &#039;Name&#039;</span></span><span class="bg-success-light">);
+
+    function addPizza(pizza) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="51"><span class="badge badge-danger">51</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="51">{
+}</span><span class="stryker-original-code" data-mutant="51"><span class="bg-danger-light">{
+        this.orderService.addItem(pizza);
+
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="52"><span class="badge badge-danger">52</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="52">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="53"><span class="badge badge-danger">53</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="53">true</span><span class="stryker-original-code" data-mutant="52"><span class="stryker-original-code" data-mutant="53"><span class="bg-danger-light">isNodeOrder(pizza)</span></span></span><span class="bg-danger-light">) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="54"><span class="badge badge-danger">54</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="54">{
+}</span><span class="stryker-original-code" data-mutant="54"><span class="bg-danger-light">{
+            addPizzaExisting(pizza);
+            return;
+        }</span></span><span class="bg-danger-light">
+
+        if (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="55"><span class="badge badge-danger">55</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="55">false</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="56"><span class="badge badge-danger">56</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="56">true</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BooleanSubstitution" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="57"><span class="badge badge-danger">57</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="57">isHeaderOrder()</span><span class="stryker-original-code" data-mutant="55"><span class="stryker-original-code" data-mutant="56"><span class="stryker-original-code" data-mutant="57"><span class="bg-danger-light">!isHeaderOrder()</span></span></span></span><span class="bg-danger-light">) addHeaderOrder();
+
+        addPizzaNew(pizza);
+    }</span></span><span class="bg-success-light">
+
+    function addPizzaExisting(pizza) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="58"><span class="badge badge-danger">58</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="58">{
+}</span><span class="stryker-original-code" data-mutant="58"><span class="bg-danger-light">{
+        const quantity = this.orderService.item(pizza).quantity;
+        const price = this.orderService.detailPrice(pizza);
+        gui.setPizzaNodeQuantity(pizza, quantity);
+        gui.setPizzaNodePrice(pizza, price);
+    }</span></span><span class="bg-success-light">
+
+    function addPizzaNew(pizza) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="59"><span class="badge badge-danger">59</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="59">{
+}</span><span class="stryker-original-code" data-mutant="59"><span class="bg-danger-light">{
+        const ingredientsid = pizza.ingredients.toString().replace(/,| /g, &#039;&#039;);
+
+        const trBody = generateNode(&#039;tr&#039;, _, {
+            id: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="60"><span class="badge badge-danger">60</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="60">pizza.hash - &#039;tr&#039;</span><span class="stryker-original-code" data-mutant="60"><span class="bg-danger-light">pizza.hash + &#039;tr&#039;</span></span><span class="bg-danger-light">,
+        }, gui.getNode(&#039;orderTable&#039;));
+
+        const tdName = generateNode(&#039;td&#039;, _, {
+            id: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="61"><span class="badge badge-danger">61</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="61">pizza.hash - &#039;Name&#039;</span><span class="stryker-original-code" data-mutant="61"><span class="bg-danger-light">pizza.hash + &#039;Name&#039;</span></span><span class="bg-danger-light">
+        }, trBody);
+        insertText(`${pizza.name}(${pizza.ingredients})`, tdName);
+
+        const tdPrice = generateNode(&#039;td&#039;, _, {
+            id: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="62"><span class="badge badge-danger">62</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="62">pizza.hash - &#039;Price&#039;</span><span class="stryker-original-code" data-mutant="62"><span class="bg-danger-light">pizza.hash + &#039;Price&#039;</span></span><span class="bg-danger-light">
+        }, trBody);
+        insertText(pizza.price, tdPrice);
+
+        const tdQuantity = generateNode(&#039;td&#039;, _, {
+            id: </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="63"><span class="badge badge-danger">63</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="63">pizza.hash - &#039;Quantity&#039;</span><span class="stryker-original-code" data-mutant="63"><span class="bg-danger-light">pizza.hash + &#039;Quantity&#039;</span></span><span class="bg-danger-light">
+        }, trBody);
+        insertText(this.orderService.item(pizza).quantity, tdQuantity);
+
+        insertText(pizza.size, generateNode(&#039;td&#039;, _, _, trBody));
+
+        const deleteButton = generateNode(&#039;button&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="64"><span class="badge badge-danger">64</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="64">[]</span><span class="stryker-original-code" data-mutant="64"><span class="bg-danger-light">[&#039;deleteButton&#039;]</span></span><span class="bg-danger-light">, {
+            type: &#039;button&#039;,
+        }, trBody);
+
+        deleteButton.onclick = () =&gt; </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="65"><span class="badge badge-danger">65</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="65">{
+}</span><span class="stryker-original-code" data-mutant="65"><span class="bg-danger-light">{
+            this.orderService.removeItem(pizza);
+            gui.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="66"><span class="badge badge-danger">66</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="66">pizza.hash - &#039;tr&#039;</span><span class="stryker-original-code" data-mutant="66"><span class="bg-danger-light">pizza.hash + &#039;tr&#039;</span></span><span class="bg-danger-light">)
+                .parentNode
+                .removeChild(gui.getNode(</span><a href="#" class="stryker-mutant-button" tabindex="0" title="BinaryOperator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="67"><span class="badge badge-danger">67</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="67">pizza.hash - &#039;tr&#039;</span><span class="stryker-original-code" data-mutant="67"><span class="bg-danger-light">pizza.hash + &#039;tr&#039;</span></span><span class="bg-danger-light">));
+        }</span></span><span class="bg-danger-light">
+        insertText(&#039;X&#039;, deleteButton);
+    }</span></span><span class="bg-success-light">
+
+
+    function addHeaderOrder() </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="68"><span class="badge badge-danger">68</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="68">{
+}</span><span class="stryker-original-code" data-mutant="68"><span class="bg-danger-light">{
+        const table = generateNode(&#039;table&#039;, </span><a href="#" class="stryker-mutant-button" tabindex="0" title="ArrayDeclarator" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="69"><span class="badge badge-danger">69</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="69">[]</span><span class="stryker-original-code" data-mutant="69"><span class="bg-danger-light">[&#039;table&#039;, &#039;table-striped&#039;]</span></span><span class="bg-danger-light">, _, gui.getNode(&#039;order&#039;));
+        const tHead = generateNode(&#039;thead&#039;, _, _, table);
+        const trHead = generateNode(&#039;tr&#039;, _, _, tHead);
+
+        insertText(&#039;Nombre&#039;, generateNode(&#039;th&#039;, _, _, trHead));
+        insertText(&#039;Precio&#039;, generateNode(&#039;th&#039;, _, _, trHead));
+        insertText(&#039;Cantidad&#039;, generateNode(&#039;th&#039;, _, _, trHead));
+        insertText(&#039;Tamaño&#039;, generateNode(&#039;th&#039;, _, _, trHead));
+
+        generateNode(&#039;tbody&#039;, _, {
+            id: &#039;orderTable&#039;,
+        }, table);
+    }</span></span><span class="bg-success-light">
+
+    function removeNodes(node) </span><a href="#" class="stryker-mutant-button" tabindex="0" title="BlockStatement" data-content="status: Survived" data-mutant-status-annotation="danger" data-mutant-status="2" data-mutant="70"><span class="badge badge-danger">70</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="70">{
+}</span><span class="stryker-original-code" data-mutant="70"><span class="bg-danger-light">{
+        while (</span><a href="#" class="stryker-mutant-button" tabindex="0" title="RemoveConditionals" data-content="status: NoCoverage" data-mutant-status-annotation="danger" data-mutant-status="0" data-mutant="71"><span class="badge badge-danger">71</span></a><span class="badge badge-info stryker-mutant-replacement" hidden="hidden" data-mutant="71">false</span><span class="stryker-original-code" data-mutant="71"><span class="bg-danger-light">node.hasChildNodes()</span></span><span class="bg-danger-light">)
+            node.removeChild(node.firstChild);
+    }</span></span><span class="bg-success-light">
+
+    return {
+        init,
+        gui,
+        removeNodes,
+        addHeaderOrder,
+        addPizzaExisting,
+        addPizza,
+        isNodeOrder,
+        isHeaderOrder,
+        removeIngredient,
+        addIngredient,
+        showSelectedPizza,
+        showAvaiableIngredients,
+        showDefaultIngredients,
+        printPizza,
+        radioSize,
+        showPizzas,
+        generateNode,
+        insertText
+    }
+}</span></span><span class="bg-null">(window.document)</span>;</code></pre></div>
+<div class="col-lg-5"><table class="table table-sm table-hover mutant-table"><thead><tr><th>#</th>
+<th>Mutator</th>
+<th>State</th>
+<th>Location</th>
+<th>Original</th>
+<th>Replacement</th></tr></thead>
+<tbody><tr><th>0</th>
+<td>BlockStatement</td>
+<td>Killed</td>
+<td>0
+:
+39</td>
+<td><code>{
+   ...  }
+}</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>1</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>7
+:
+57</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>2</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>8
+:
+25</td>
+<td><code>.    ...    '</code></td>
+<td><code>.    ...    '</code></td></tr>
+<tr><th>3</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>10
+:
+51</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>4</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>11
+:
+25</td>
+<td><code>.     + '     '</code></td>
+<td><code>.     - '     '</code></td></tr>
+<tr><th>5</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>11
+:
+73</td>
+<td><code>.    ...+ '€'</code></td>
+<td><code>.    ...    '</code></td></tr>
+<tr><th>6</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>13
+:
+45</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>7</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>14
+:
+25</td>
+<td><code>'    ' +</code></td>
+<td><code>'    ' -</code></td></tr>
+<tr><th>8</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>14
+:
+66</td>
+<td><code>.    ...+ '€'</code></td>
+<td><code>.    ...    '</code></td></tr>
+<tr><th>9</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>16
+:
+32</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>10</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>22
+:
+49</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>11</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>34
+:
+42</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>12</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>39
+:
+67</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>13</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>41
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>14</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>41
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>15</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>42
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>16</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>42
+:
+12</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>17</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>42
+:
+24</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>18</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>43
+:
+60</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>19</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>50
+:
+29</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>20</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>51
+:
+53</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>21</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>56
+:
+39</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>22</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>64
+:
+32</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>23</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>65
+:
+44</td>
+<td><code>['   -  - ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>24</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>66
+:
+45</td>
+<td><code>['     ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>25</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>67
+:
+28</td>
+<td><code>['   -  - ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>26</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>71
+:
+55</td>
+<td><code>['   -  - ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>27</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>73
+:
+8</td>
+<td><code>["   ...   "]</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>28</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>73
+:
+57</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>29</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>74
+:
+50</td>
+<td><code>['     ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>30</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>78
+:
+22</td>
+<td><code>'    ...    .</code></td>
+<td><code>'    ...    .</code></td></tr>
+<tr><th>31</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>85
+:
+51</td>
+<td><code>['   ...   ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>32</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>86
+:
+42</td>
+<td><code>['   ...   ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>33</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>90
+:
+19</td>
+<td><code>.      + '€'</code></td>
+<td><code>.    ...    '</code></td></tr>
+<tr><th>34</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>91
+:
+16</td>
+<td><code>'    ' +      .</code></td>
+<td><code>'    ' -      .</code></td></tr>
+<tr><th>35</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>94
+:
+46</td>
+<td><code>['   ...   ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>36</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>98
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>37</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>105
+:
+43</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>38</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>108
+:
+48</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>39</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>110
+:
+37</td>
+<td><code>.    ...    -</code></td>
+<td><code>.    ...    +</code></td></tr>
+<tr><th>40</th>
+<td>BooleanSubstitution</td>
+<td>NoCoverage</td>
+<td>110
+:
+88</td>
+<td><code></code></td>
+<td><code></code></td></tr>
+<tr><th>41</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>113
+:
+44</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>42</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>116
+:
+47</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>43</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>120
+:
+33</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>44</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>123
+:
+28</td>
+<td><code>['   ... - ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>45</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>136
+:
+46</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>46</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>141
+:
+32</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>47</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>145
+:
+51</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>48</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>152
+:
+35</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>49</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>155
+:
+47</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>50</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>165
+:
+47</td>
+<td><code>.     + '    '</code></td>
+<td><code>.     - '    '</code></td></tr>
+<tr><th>51</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>167
+:
+29</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>52</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>170
+:
+12</td>
+<td><code>(     )</code></td>
+<td><code></code></td></tr>
+<tr><th>53</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>170
+:
+12</td>
+<td><code>(     )</code></td>
+<td><code></code></td></tr>
+<tr><th>54</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>170
+:
+32</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>55</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>175
+:
+12</td>
+<td><code>!    ...   ()</code></td>
+<td><code></code></td></tr>
+<tr><th>56</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>175
+:
+12</td>
+<td><code>!    ...   ()</code></td>
+<td><code></code></td></tr>
+<tr><th>57</th>
+<td>BooleanSubstitution</td>
+<td>NoCoverage</td>
+<td>175
+:
+12</td>
+<td><code>!    ...   ()</code></td>
+<td><code>()</code></td></tr>
+<tr><th>58</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>180
+:
+37</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>59</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>187
+:
+32</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>60</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>191
+:
+16</td>
+<td><code>.     + '  '</code></td>
+<td><code>.     - '  '</code></td></tr>
+<tr><th>61</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>195
+:
+16</td>
+<td><code>.     + '    '</code></td>
+<td><code>.     - '    '</code></td></tr>
+<tr><th>62</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>200
+:
+16</td>
+<td><code>.     + '     '</code></td>
+<td><code>.     - '     '</code></td></tr>
+<tr><th>63</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>205
+:
+16</td>
+<td><code>.    ...    '</code></td>
+<td><code>.    ...    '</code></td></tr>
+<tr><th>64</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>211
+:
+52</td>
+<td><code>['   ...   ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>65</th>
+<td>BlockStatement</td>
+<td>NoCoverage</td>
+<td>215
+:
+37</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>66</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>217
+:
+24</td>
+<td><code>.     + '  '</code></td>
+<td><code>.     - '  '</code></td></tr>
+<tr><th>67</th>
+<td>BinaryOperator</td>
+<td>NoCoverage</td>
+<td>219
+:
+41</td>
+<td><code>.     + '  '</code></td>
+<td><code>.     - '  '</code></td></tr>
+<tr><th>68</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>225
+:
+30</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>69</th>
+<td>ArrayDeclarator</td>
+<td>NoCoverage</td>
+<td>226
+:
+44</td>
+<td><code>['   ...   ']</code></td>
+<td><code>[]</code></td></tr>
+<tr><th>70</th>
+<td>BlockStatement</td>
+<td>Survived</td>
+<td>240
+:
+31</td>
+<td><code>{
+   ...    }</code></td>
+<td><code>{
+}</code></td></tr>
+<tr><th>71</th>
+<td>RemoveConditionals</td>
+<td>NoCoverage</td>
+<td>241
+:
+15</td>
+<td><code>.    ...   ()</code></td>
+<td><code></code></td></tr></tbody></table></div></div></div></div>
+<footer>Generated with stryker-html-reporter generator. Visit the 
+<a href="http://stryker-mutator.github.io" target="_blank">Stryker website</a></footer></div>
+<script src="strykerResources/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+<script src="strykerResources/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+<script src="strykerResources/bootstrap/js/bootstrap.min.js" defer="defer"></script>
+<script src="strykerResources/stryker.js" defer="defer"></script></body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- build:css styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+
+    <title>Pizzeria</title>
+</head>
+
+<body>
+    <header class="align-center header">Pizzeria I&R</header>
+    <div class='container'>
+        <main>
+            <h2>Menú</h2>
+            <hr>
+            <section id="listPizzas" class="pizza-list">
+            </section>
+            <section class="col-md-8">
+                <h2>Pizza seleccionada</h2>
+                <hr>
+                <section id='selectedPizza' class="col-md-5"></section>
+                <section id='selectedPizza' class="col-md-7">
+                    <section class="col-md-5">
+                        <h4>Ingredientes para añadir</h4>
+                        <select class="ingredients" id="availableIngredients" multiple>
+                        </select>
+                    </section>
+                    <section class="ingredients-edit col-md-2">
+                        <button class="btn btn-primary" id="addIngredient"> &#62;&#62; </button>
+                        <button class="btn btn-danger" id="rmIngredient"> &#60;&#60; </button>
+                    </section>
+                    <section class="col-md-5">
+                        <h4>Ingredientes añadidos</h4>
+                        <select class="ingredients" id="addedIngredients" multiple>
+
+                        </select>
+                    </section>
+                </section>
+            </section>
+            <section class="col-md-4">
+                <h2>Factura</h2>
+                <hr>
+                <section id='order'></section>
+            </section>
+        </main>
+    </div>
+</body>
+<!-- build:js scripts/app.js -->
+<script src="js/models/pizza.model.js"></script>
+<!-- <script src="js/models/order.model.js"></script> -->
+
+<script src="js/services/pizza.service.js"></script>
+<!-- <script src="js/services/order.service.js"></script> -->
+
+<script src="js/app.settings.js"></script>
+<script src="js/controller.js"></script>
+<!-- endbuild -->
+<script>
+
+    const pizzaService = new PizzaService(AppSettings.pizzas, AppSettings.ingredients)
+    const orderService = new OrderService();
+    controller.init(pizzaService, orderService);/* 
+    service.init(settings);
+    controller.init(service);
+    controller.showPizzas(); */
+</script>
+
+</html>

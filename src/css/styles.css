@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+* {
+    font-family: 'Lobster', cursive;
+}
+
+.defaultPizzas {
+    width: 100%;
+    height: 200px;
+    background: red;
+}
+
+.header {
+    background: red;
+    background: linear-gradient(45deg, #c91619 0%, #f92020 50%, #ff3538 51%, #ba0e11 100%);
+    text-align: center;
+    font-size: 4.5em;
+    color: #ffffff;
+    text-shadow: 5px 5px 2px rgb(0, 31, 208);
+}
+
+.container h2 {
+    color: #6b6b6b;
+    font-weight: bold;
+}
+
+.pizza-list {
+    box-sizing: border-box;
+}
+
+.pizza-list .pizza {
+    border: 4px double #ad0000;
+    height: 250px;
+    box-shadow: -0.5px -0.5px 0 0.5px #ccc, inset -1px -1px 0 0 #ccc;
+}
+
+.pizza button:hover {
+    text-shadow: 4px 4px 2px rgb(13, 0, 133);
+}
+
+.pizza label:hover {
+    color: rgb(13, 0, 133)
+}
+
+.pizza,
+.pizza * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.pizza img {
+    height: 70%;
+}
+
+.pizza h4 {
+    color: #34347d;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.pizza .radio {
+    margin-left: 10px;
+}
+
+.pizza .title {
+    margin-left: 10px;
+    font-size: 1.4em;
+    color: #b30000;
+}
+
+.pizza .price {
+    margin: 0 10px;
+}
+
+hr {
+    border: 1px solid #82000b;
+}
+
+.pizza input[type="radio"] {
+    opacity: 0;
+    width: 100%;
+    left: 30%;
+    cursor: pointer;
+}
+
+.pizza input[type="radio"]:checked+label {
+    color: red;
+}
+
+input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.radio label {
+    cursor: auto;
+}
+
+.addButton {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    height: 40px;
+    font-size: 40px;
+}
+
+.deleteButton {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    color: red;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.img-selected {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+select.ingredients {
+    width: 100%;
+    height: 200px;
+}
+
+.ingredients-edit {
+    margin-top: 125px
+}
+
+#selectedPizza>button {
+    position: absolute;
+    color: #fff;
+    right: 0px;
+    background: blue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+
+.ingredients option {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.img-selected {
+    animation-duration: 1s;
+    animation-name: key-opacity;
+}
+
+#order tr {
+    animation-duration: 1s;
+    animation-name: key-opacity;
+}
+#order button {
+    margin-left: 10px;
+}
+
+@keyframes key-opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
